@@ -1,0 +1,9 @@
+.prueba {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.prueba2 {
+  flex-grow: 1;
+}
