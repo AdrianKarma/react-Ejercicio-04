@@ -16,7 +16,11 @@ const FormularioTareas = () => {
     setTarea("");
     
   };
+const borrarTarea = (nombreTarea)=>{
+    const copiaTareas= tareas.filter((tarea)=> tarea !== nombreTarea);
+    setTareas(copiaTareas);
 
+}
 
 
   return (
@@ -40,7 +44,7 @@ const FormularioTareas = () => {
           </Button>
         </Form.Group>
       </Form>
-      <ListaTareas tareas={tareas}></ListaTareas>
+      <ListaTareas tareas={tareas} borrarTarea={borrarTarea}></ListaTareas>
     </section>
   );
 };
