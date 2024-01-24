@@ -30,16 +30,16 @@ const borrarTarea = (nombreTarea)=>{
           className="mb-3 d-flex"
           controlId="exampleForm.ControlInput1"
         >
-          <Form.Label>Ingresa tus Tareas:</Form.Label>
+          <Form.Label className="labelTarea">Ingresa tus Tareas:</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Tarea1"
+            placeholder="Ej: Tarea1"
             minLength={3}
             maxLength={50}
             onChange={(e) => setTarea(e.target.value)}
             value={tarea}
           />
-          <Button className="mx-3" type="submit" variant="info">
+          <Button className="mx-3" type="submit" variant="success">
             Enviar
           </Button>
         </Form.Group>
